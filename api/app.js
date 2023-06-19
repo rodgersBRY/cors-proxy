@@ -46,4 +46,4 @@ app.listen(app.get("port"), () => {
   console.log("Proxy server listening on port " + app.get("port"));
 });
 
-module.export = app
+module.exports = app
