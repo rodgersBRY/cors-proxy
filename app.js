@@ -40,10 +40,14 @@ app.all("*", (req, res, next) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("What can you break, even if you never pick it up or touch it?");
+});
+
 app.set("port", process.env.PORT || 5000);
 
 app.listen(app.get("port"), () => {
   console.log("Proxy server listening on port " + app.get("port"));
 });
 
-module.exports = app
+module.exports = app;
